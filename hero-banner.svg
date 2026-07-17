@@ -1,287 +1,140 @@
-<svg width="1180" height="610" viewBox="0 0 1180 610" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <!-- Background gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
+<defs>
+  <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7C3AED"/>
+    <stop offset="50%" stop-color="#22D3EE"/>
+    <stop offset="100%" stop-color="#10B981"/>
+  </linearGradient>
+  <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="50%" stop-color="#7C3AED"/>
+    <stop offset="100%" stop-color="#10B981"/>
+  </linearGradient>
+  <radialGradient id="bgGlow" cx="30%" cy="20%" r="80%">
+    <stop offset="0%" stop-color="#0B1120"/>
+    <stop offset="100%" stop-color="#050816"/>
+  </radialGradient>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#7DD3FC" opacity="0.05"/>
+  </pattern>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
 
-    <!-- Animated border gradient -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00d9ff">
-        <animate attributeName="stop-color" values="#00d9ff;#a855f7;#ec4899;#00d9ff" dur="8s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#a855f7">
-        <animate attributeName="stop-color" values="#a855f7;#ec4899;#00d9ff;#a855f7" dur="8s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ec4899">
-        <animate attributeName="stop-color" values="#ec4899;#00d9ff;#a855f7;#ec4899" dur="8s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
+  <mask id="photoReveal" maskUnits="userSpaceOnUse" x="14" y="26" width="488" height="468">
+    <rect x="14" y="26" width="488" height="0" fill="#fff">
+      <animate attributeName="height" from="0" to="468" dur="1.3s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    </rect>
+  </mask>
 
-    <!-- ASCII gradient -->
-    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00f5ff">
-        <animate attributeName="stop-color" values="#00f5ff;#c471ed;#f64f59;#00f5ff" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#c471ed">
-        <animate attributeName="stop-color" values="#c471ed;#f64f59;#00f5ff;#c471ed" dur="6s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
+  <clipPath id="photoClip"><circle cx="258" cy="260" r="128"/></clipPath>
 
-    <!-- Name gradient -->
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#58a6ff"/>
-      <stop offset="50%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#ec4899"/>
-    </linearGradient>
+  <clipPath id="lc0"><rect x="520" y="26" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="0.75s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc1"><rect x="520" y="50" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="0.86s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc2"><rect x="520" y="72" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="0.98s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc3"><rect x="520" y="94" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.09s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc4"><rect x="520" y="116" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.21s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc5"><rect x="520" y="138" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.32s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc6"><rect x="520" y="160" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.44s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc7"><rect x="520" y="182" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.55s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc8"><rect x="520" y="204" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.67s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc9"><rect x="520" y="226" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.78s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc10"><rect x="520" y="248" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.90s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc11"><rect x="520" y="270" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.02s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc12"><rect x="520" y="290" width="0" height="20"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.13s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc13"><rect x="520" y="312" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.25s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc14"><rect x="520" y="334" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.36s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc15"><rect x="520" y="356" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.48s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc16"><rect x="520" y="378" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.59s" fill="freeze"/></rect></clipPath>
+  <clipPath id="lc17"><rect x="520" y="400" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.71s" fill="freeze"/></rect></clipPath>
 
-    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1f2937"/>
-      <stop offset="100%" stop-color="#111827"/>
-    </linearGradient>
+  <style>
+    .key    { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #22D3EE; font-weight: bold; }
+    .value  { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #E5E7EB; }
+    .cc     { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #475569; }
+    .head   { font-family: 'Courier New', Consolas, monospace; font-size: 17px; fill: #7C3AED; font-weight: bold; }
+    .accent { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #10B981; font-weight: bold; }
+    text, tspan { white-space: pre; }
+    .term-label  { font-family: 'Courier New', Consolas, monospace; font-size: 12px; fill: #64748B; letter-spacing: 0.5px; }
+    .scan-label  { font-family: 'Courier New', Consolas, monospace; font-size: 10px; fill: #F87171; letter-spacing: 1px; }
+    .panel-title { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #38BDF8; letter-spacing: 2px; opacity: 0.7; }
+  </style>
+</defs>
 
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3.2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+<rect width="1180" height="610" rx="18" fill="url(#bgGlow)"/>
+<rect width="1180" height="610" rx="18" fill="url(#scanlines)"/>
 
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="1.6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+<g id="titlebar">
+  <rect x="3" y="3" width="1174" height="34" rx="16" fill="#0B1120" fill-opacity="0.85"/>
+  <circle cx="24" cy="20" r="5" fill="#EF4444"><animate attributeName="opacity" values="1;0.55;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="42" cy="20" r="5" fill="#F59E0B"><animate attributeName="opacity" values="1;0.55;1" dur="4s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="60" cy="20" r="5" fill="#10B981"><animate attributeName="opacity" values="1;0.55;1" dur="4s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <text x="590" y="25" text-anchor="middle" class="term-label">yashwanth@devos ~ % ./profile.sh --live</text>
+  <circle cx="1122" cy="20" r="4" fill="#F87171">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1132" y="24" class="scan-label">SCANNING</text>
+</g>
 
-    <clipPath id="cardClip">
-      <rect x="1" y="1" width="1178" height="608" rx="22"/>
-    </clipPath>
+<g transform="translate(0,38)">
+  <rect x="14" y="26" width="488" height="468" rx="14" fill="#0B1120" fill-opacity="0.35" stroke="url(#borderGrad)" stroke-width="1" opacity="0.35"/>
+  <rect x="508" y="10" width="655" height="500" rx="14" fill="#0B1120" fill-opacity="0.35" stroke="url(#borderGrad)" stroke-width="1" opacity="0.35"/>
+  <text x="30" y="24" class="panel-title">PROFILE.IMG</text>
+  <text x="524" y="24" class="panel-title">SYSTEM.INFO</text>
 
-    <clipPath id="titleClip">
-      <path d="M2,20 A20,20 0 0 1 22,2 H1158 A20,20 0 0 1 1178,20 V56 H2 Z"/>
-    </clipPath>
-
-    <!-- Typing clip paths for role phrases -->
-    <clipPath id="clipP1"><rect id="rP1" x="0" y="0" width="0" height="30"/></clipPath>
-    <clipPath id="clipP2"><rect id="rP2" x="0" y="0" width="0" height="30"/></clipPath>
-    <clipPath id="clipP3"><rect id="rP3" x="0" y="0" width="0" height="30"/></clipPath>
-    <clipPath id="clipP4"><rect id="rP4" x="0" y="0" width="0" height="30"/></clipPath>
-  </defs>
-
-  <!-- Outer glow border -->
-  <rect x="0" y="0" width="1180" height="610" rx="24" fill="url(#borderGrad)"/>
-  <!-- Main card -->
-  <rect x="3" y="3" width="1174" height="604" rx="21" fill="url(#bgGrad)"/>
-
-  <g clip-path="url(#cardClip)">
-
-    <!-- ================= LEFT PANEL ================= -->
-    <rect x="0" y="0" width="448" height="610" fill="#0a0e14"/>
-
-    <!-- vertical divider -->
-    <rect x="447" y="0" width="2" height="610" fill="url(#borderGrad)" opacity="0.5"/>
-
-    <!-- floating ascii group -->
-    <g id="asciiFloat" font-family="'Courier New', Consolas, monospace" font-size="15" fill="url(#asciiGrad)" filter="url(#glow)">
+  <!-- Photo panel with boot-style reveal -->
+  <g mask="url(#photoReveal)">
+    <g id="photoFloat">
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="4.5s" repeatCount="indefinite"/>
-
-      <text x="60" y="90" opacity="0">┌──────────────────┐<animate attributeName="opacity" to="1" begin="0.3s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="118" opacity="0">│   ▄▄▄▄▄▄▄▄▄▄▄▄   │<animate attributeName="opacity" to="1" begin="0.55s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="146" opacity="0">│  █  ●      ●  █  │<animate attributeName="opacity" to="1" begin="0.8s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="174" opacity="0">│  █    ▄▄▄▄    █  │<animate attributeName="opacity" to="1" begin="1.05s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="202" opacity="0">│  █   ▀▀▀▀▀▀   █  │<animate attributeName="opacity" to="1" begin="1.3s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="230" opacity="0">│   ▀▀▀▀▀▀▀▀▀▀▀▀   │<animate attributeName="opacity" to="1" begin="1.55s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="258" opacity="0">│                  │<animate attributeName="opacity" to="1" begin="1.8s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="286" opacity="0">│   SYSTEM: ONLINE │<animate attributeName="opacity" to="1" begin="2.05s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="314" opacity="0">│   MODE: BUILD    │<animate attributeName="opacity" to="1" begin="2.3s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="342" opacity="0">│  [■■■■■■■■■□□]   │<animate attributeName="opacity" to="1" begin="2.55s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="370" opacity="0">│    82% SHIPPED   │<animate attributeName="opacity" to="1" begin="2.8s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="398" opacity="0">└──────────────────┘<animate attributeName="opacity" to="1" begin="3.05s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="426" opacity="0">        ║  ║  ║<animate attributeName="opacity" to="1" begin="3.3s" dur="0.01s" fill="freeze"/></text>
-      <text x="60" y="454" opacity="0" font-weight="bold">  &lt;yashwanth412/&gt;<animate attributeName="opacity" to="1" begin="3.55s" dur="0.01s" fill="freeze"/></text>
-
-      <!-- blinking cursor after last line -->
-      <rect x="248" y="440" width="10" height="18" fill="#00f5ff" opacity="0">
-        <animate attributeName="opacity" values="0;0;1;0" keyTimes="0;0.85;0.92;1" begin="3.7s" dur="1s" repeatCount="indefinite"/>
-      </rect>
+      <circle cx="258" cy="260" r="142" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-dasharray="18 14" filter="url(#softGlow)">
+        <animateTransform attributeName="transform" type="rotate" from="0 258 260" to="360 258 260" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="258" cy="260" r="130" fill="none" stroke="#30363d" stroke-width="2"/>
+      <g clip-path="url(#photoClip)">
+        <image href="https://github.com/yashwanth412.png" x="130" y="132" width="256" height="256" preserveAspectRatio="xMidYMid slice"/>
+      </g>
+      <circle cx="258" cy="260" r="126" fill="none" stroke="#0B1120" stroke-width="4"/>
     </g>
-
-    <!-- scanline sweep -->
-    <rect x="45" y="70" width="360" height="3" fill="#00f5ff" opacity="0.12">
-      <animate attributeName="y" values="70;480;70" dur="3.2s" begin="1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.18;0" dur="3.2s" begin="1s" repeatCount="indefinite"/>
+    <rect x="30" y="60" width="428" height="3" fill="#22D3EE" opacity="0.15">
+      <animate attributeName="y" values="60;450;60" dur="3.2s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.2;0" dur="3.2s" begin="1.4s" repeatCount="indefinite"/>
     </rect>
-
-    <!-- subtle scanline grid overlay -->
-    <g opacity="0.05">
-      <rect x="0" y="0" width="448" height="2" fill="#ffffff"/>
-      <rect x="0" y="8" width="448" height="1" fill="#ffffff"/>
-      <rect x="0" y="16" width="448" height="1" fill="#ffffff"/>
-    </g>
-
-    <text x="60" y="500" font-family="'Courier New', monospace" font-size="12" fill="#3fb950" opacity="0">
-      root@dev-terminal: connection secure
-      <animate attributeName="opacity" to="0.75" begin="4s" dur="0.01s" fill="freeze"/>
-    </text>
-
-    <!-- ================= RIGHT PANEL ================= -->
-    <!-- Terminal window -->
-    <rect x="480" y="40" width="660" height="530" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-    <path d="M480,54 A14,14 0 0 1 494,40 H1126 A14,14 0 0 1 1140,54 V76 H480 Z" fill="#1c2128"/>
-    <circle cx="507" cy="58" r="6" fill="#ff5f56"/>
-    <circle cx="527" cy="58" r="6" fill="#ffbd2e"/>
-    <circle cx="547" cy="58" r="6" fill="#27c93f"/>
-    <text x="575" y="63" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">yashwanth@dev:~</text>
-
-    <!-- Greeting -->
-    <text x="520" y="122" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="26" fill="#c9d1d9" opacity="0">
-      Hi
-      <animate attributeName="opacity" to="1" begin="0.3s" dur="0.01s" fill="freeze"/>
-    </text>
-    <text x="558" y="122" font-size="26" opacity="0">
-      👋
-      <animate attributeName="opacity" to="1" begin="0.3s" dur="0.01s" fill="freeze"/>
-    </text>
-
-    <text x="520" y="168" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="34" font-weight="700" fill="url(#nameGrad)" opacity="0" filter="url(#softGlow)">
-      I'm Yashwanth Pasupuleti
-      <animate attributeName="opacity" to="1" begin="0.7s" dur="0.01s" fill="freeze"/>
-    </text>
-
-    <!-- Typing role line -->
-    <text x="520" y="205" font-family="'Courier New', monospace" font-size="20" fill="#58a6ff">&gt;</text>
-
-    <g font-family="'Courier New', monospace" font-size="20" fill="#e6edf3" font-weight="600">
-      <g clip-path="url(#clipP1)">
-        <text x="542" y="205">Full Stack Developer</text>
-      </g>
-      <g clip-path="url(#clipP2)">
-        <text x="542" y="205">Indie SaaS Builder</text>
-      </g>
-      <g clip-path="url(#clipP3)">
-        <text x="542" y="205">Data Analyst</text>
-      </g>
-      <g clip-path="url(#clipP4)">
-        <text x="542" y="205">AI-Assisted Dev</text>
-      </g>
-    </g>
-
-    <!-- clip rect width animations driving the typewriter reveal, 12s full cycle -->
-    <rect x="0" y="0" width="0" height="30" opacity="0">
-      <animate xlink:href="#rP1" attributeName="width"
-        keyTimes="0;0.0833;0.1833;0.2333;1"
-        values="0;255;255;0;0" dur="12s" begin="1s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="0" y="0" width="0" height="30" opacity="0">
-      <animate xlink:href="#rP2" attributeName="width"
-        keyTimes="0;0.25;0.3333;0.4333;0.4833;1"
-        values="0;0;225;225;0;0" dur="12s" begin="1s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="0" y="0" width="0" height="30" opacity="0">
-      <animate xlink:href="#rP3" attributeName="width"
-        keyTimes="0;0.5;0.5833;0.6833;0.7333;1"
-        values="0;0;150;150;0;0" dur="12s" begin="1s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="0" y="0" width="0" height="30" opacity="0">
-      <animate xlink:href="#rP4" attributeName="width"
-        keyTimes="0;0.75;0.8333;0.9333;0.9833;1"
-        values="0;0;190;190;0;0" dur="12s" begin="1s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- blinking cursor for role line -->
-    <rect x="732" y="188" width="10" height="20" fill="#58a6ff">
-      <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Info rows -->
-    <g font-family="'Courier New', monospace" font-size="16" fill="#8b949e">
-      <text x="520" y="255" opacity="0">
-        <tspan fill="#58a6ff">▸ Location:</tspan> Nellore, Andhra Pradesh, India
-        <animate attributeName="opacity" to="1" begin="1.4s" dur="0.01s" fill="freeze"/>
-      </text>
-      <text x="520" y="283" opacity="0">
-        <tspan fill="#58a6ff">▸ Education:</tspan> B.Tech, ECE — Narayana Engineering College
-        <animate attributeName="opacity" to="1" begin="1.65s" dur="0.01s" fill="freeze"/>
-      </text>
-      <text x="520" y="311" opacity="0">
-        <tspan fill="#58a6ff">▸ Current Focus:</tspan> Building BhaiCA — SaaS for CAs
-        <animate attributeName="opacity" to="1" begin="1.9s" dur="0.01s" fill="freeze"/>
-      </text>
-      <text x="520" y="339" opacity="0">
-        <tspan fill="#58a6ff">▸ Portfolio:</tspan> github.com/yashwanth412
-        <animate attributeName="opacity" to="1" begin="2.15s" dur="0.01s" fill="freeze"/>
-      </text>
-      <text x="520" y="367" opacity="0">
-        <tspan fill="#58a6ff">▸ Email:</tspan> pasupuleti.yashwanth0412@gmail.com
-        <animate attributeName="opacity" to="1" begin="2.4s" dur="0.01s" fill="freeze"/>
-      </text>
-    </g>
-
-    <!-- Tech stack label -->
-    <text x="520" y="415" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="16" font-weight="700" fill="#c9d1d9" opacity="0">
-      Tech Stack
-      <animate attributeName="opacity" to="1" begin="2.65s" dur="0.01s" fill="freeze"/>
-    </text>
-
-    <!-- Skill pills -->
-    <g font-family="'Courier New', monospace" font-size="14" font-weight="600">
-      <!-- Row 1 -->
-      <g opacity="0">
-        <animate attributeName="opacity" to="1" begin="2.8s" dur="0.01s" fill="freeze"/>
-        <rect x="520" y="435" width="75" height="34" rx="17" fill="url(#pillGrad)" stroke="#00d9ff" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="3s" repeatCount="indefinite"/>
-        </rect>
-        <text x="557" y="457" fill="#79c0ff" text-anchor="middle">React</text>
-
-        <rect x="609" y="435" width="85" height="34" rx="17" fill="url(#pillGrad)" stroke="#a855f7" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="3.2s" repeatCount="indefinite"/>
-        </rect>
-        <text x="651" y="457" fill="#d2a8ff" text-anchor="middle">Django</text>
-
-        <rect x="708" y="435" width="85" height="34" rx="17" fill="url(#pillGrad)" stroke="#ec4899" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="3.4s" repeatCount="indefinite"/>
-        </rect>
-        <text x="750" y="457" fill="#f2a5c9" text-anchor="middle">Python</text>
-
-        <rect x="807" y="435" width="100" height="34" rx="17" fill="url(#pillGrad)" stroke="#00d9ff" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="3.6s" repeatCount="indefinite"/>
-        </rect>
-        <text x="857" y="457" fill="#79c0ff" text-anchor="middle">Supabase</text>
-      </g>
-
-      <!-- Row 2 -->
-      <g opacity="0">
-        <animate attributeName="opacity" to="1" begin="3s" dur="0.01s" fill="freeze"/>
-        <rect x="520" y="480" width="75" height="34" rx="17" fill="url(#pillGrad)" stroke="#a855f7" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="3.8s" repeatCount="indefinite"/>
-        </rect>
-        <text x="557" y="502" fill="#d2a8ff" text-anchor="middle">Azure</text>
-
-        <rect x="609" y="480" width="100" height="34" rx="17" fill="url(#pillGrad)" stroke="#ec4899" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="4s" repeatCount="indefinite"/>
-        </rect>
-        <text x="659" y="502" fill="#f2a5c9" text-anchor="middle">Power BI</text>
-
-        <rect x="723" y="480" width="100" height="34" rx="17" fill="url(#pillGrad)" stroke="#00d9ff" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="4.2s" repeatCount="indefinite"/>
-        </rect>
-        <text x="773" y="502" fill="#79c0ff" text-anchor="middle">Tailwind</text>
-
-        <rect x="837" y="480" width="60" height="34" rx="17" fill="url(#pillGrad)" stroke="#a855f7" stroke-width="1.2" filter="url(#softGlow)">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="4.4s" repeatCount="indefinite"/>
-        </rect>
-        <text x="867" y="502" fill="#d2a8ff" text-anchor="middle">SQL</text>
-      </g>
-    </g>
-
-    <!-- bottom status bar -->
-    <text x="520" y="545" font-family="'Courier New', monospace" font-size="12" fill="#3fb950" opacity="0">
-      ● Available for freelance work
-      <animate attributeName="opacity" to="0.85" begin="4.6s" dur="0.01s" fill="freeze"/>
-    </text>
   </g>
+
+  <text x="258" y="430" text-anchor="middle" class="key" opacity="0">&lt;yashwanth412/&gt;
+    <animate attributeName="opacity" to="1" begin="1.6s" dur="0.01s" fill="freeze"/>
+  </text>
+  <text x="258" y="454" text-anchor="middle" class="cc" opacity="0">root@dev-terminal: connection secure
+    <animate attributeName="opacity" to="1" begin="1.75s" dur="0.01s" fill="freeze"/>
+  </text>
+  <g opacity="0">
+    <animate attributeName="opacity" to="1" begin="1.9s" dur="0.01s" fill="freeze"/>
+    <circle cx="216" cy="478" r="4" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="228" y="483" class="accent" font-size="12">status: available for freelance</text>
+  </g>
+
+  <!-- System info panel -->
+  <g clip-path="url(#lc0)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="42" class="head">yashwanth@devos</tspan><tspan class="cc"> -——————————————————————————-—-</tspan></text></g>
+  <g clip-path="url(#lc1)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="66" class="cc">. </tspan><tspan class="key">Subject</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">Yashwanth Pasupuleti</tspan></text></g>
+  <g clip-path="url(#lc2)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="88" class="cc">. </tspan><tspan class="key">Role</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">Data Engineering</tspan></text></g>
+  <g clip-path="url(#lc3)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="110" class="cc">. </tspan><tspan class="key">Origin</tspan><tspan class="cc">: ........................... </tspan><tspan class="value">India</tspan></text></g>
+  <g clip-path="url(#lc4)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="132" class="cc">. </tspan><tspan class="key">Education</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">B.Tech</tspan></text></g>
+  <g clip-path="url(#lc5)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="154" class="cc">. </tspan><tspan class="key">Status</tspan><tspan class="cc">: ............ </tspan><tspan class="value">Building • Freelancing • Job Hunting</tspan></text></g>
+  <g clip-path="url(#lc6)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="176" class="cc">. </tspan><tspan class="key">ToolChain</tspan><tspan class="cc">: ................. </tspan><tspan class="value">VS Code, Git, Power BI, Excel, Antigravity</tspan></text></g>
+  <g clip-path="url(#lc7)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="198" class="cc">. </tspan></text></g>
+  <g clip-path="url(#lc8)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="220" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Lang</tspan><tspan class="cc">: .......... </tspan><tspan class="value">Python, SQL</tspan></text></g>
+  <g clip-path="url(#lc9)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="242" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">BI</tspan><tspan class="cc">: ............ </tspan><tspan class="value">Power BI, Excel, Azure Synapse</tspan></text></g>
+  <g clip-path="url(#lc10)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="264" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Web</tspan><tspan class="cc">: ........... </tspan><tspan class="value">React, Django, Tailwind CSS</tspan></text></g>
+  <g clip-path="url(#lc11)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="286" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Cloud</tspan><tspan class="cc">: ......... </tspan><tspan class="value">Azure, Supabase, AWS*, GCP*</tspan></text></g>
+  <g clip-path="url(#lc12)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="306" class="cc" font-size="12">          * currently learning</tspan></text></g>
+  <g clip-path="url(#lc13)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="328" class="cc">. </tspan></text></g>
+  <g clip-path="url(#lc14)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="350" class="accent">- Contact</tspan><tspan class="cc"> -—————————————————————————</tspan></text></g>
+  <g clip-path="url(#lc15)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="372" class="cc">. </tspan><tspan class="key">Portfolio</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">github.com/yashwanth412</tspan></text></g>
+  <g clip-path="url(#lc16)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="394" class="cc">. </tspan><tspan class="key">Email</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">pasupuleti.yashwanth0412@gmail.com</tspan></text></g>
+  <g clip-path="url(#lc17)"><text x="520" y="0" fill="#dbeafe"><tspan x="520" y="416" class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">in/yashwanthpasupuleti</tspan></text></g>
+
+</g>
 </svg>
