@@ -1,10 +1,9 @@
+
+
+![Header](./hero-banner.svg)
 <div align="center">
 
-# 👋 Hi, I'm Pasupuleti Yashwanth
-
 ### Software Engineer • Azure Data Engineer • AI Builder
-
-<img src="https://raw.githubusercontent.com/yashwanth412/yashwanth412/main/assets/profile-banner.svg" width="100%" alt="Profile Banner"/>
 
 <br>
 
