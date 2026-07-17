@@ -1,4 +1,32 @@
+<div align="center">
 
+<img src="./hero-banner.svg" alt="Pasupuleti Yashwanth Banner" width="100%" />
+
+# Pasupuleti Yashwanth
+
+### Software Engineer • Azure Data Engineer • AI Engineer • SaaS Builder
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=900&lines=Software+Engineer;Azure+Data+Engineer;AI+Engineer;SaaS+Builder;Open+Source+Contributor)](https://git.io/typing-svg)
+
+<a href="https://github.com/yashwanth412">
+<img src="https://img.shields.io/badge/GitHub-yashwanth412-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/yashwanthpasupuleti/">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="mailto:pasupuleti.yashwanth0412@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<br><br>
+
+![](https://komarev.com/ghpvc/?username=yashwanth412&style=for-the-badge&color=7C3AED)
+![](https://img.shields.io/github/followers/yashwanth412?style=for-the-badge)
+![](https://img.shields.io/github/stars/yashwanth412?style=for-the-badge)
+
+</div>
 
 ![Header](./hero-banner.svg)
 <div align="center">
