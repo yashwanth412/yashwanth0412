@@ -75,7 +75,7 @@ I'm **Pasupuleti Yashwanth**, a Software Engineer passionate about building scal
 ### Cloud & DevOps
 
 <p>
-<img src="https://skillicons.dev/icons?i=azure,gcp,aws, Google, docker,kubernetes,git,github"/>
+<img src="https://skillicons.dev/icons?i=azure,aws,gcp,docker,kubernetes,git,github"/>
 </p>
 
 ---
