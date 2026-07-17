@@ -84,9 +84,7 @@ I'm **Pasupuleti Yashwanth**, a Software Engineer passionate about building scal
 
 ## GitHub Statistics
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=yashwanth412&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yashwanth412&layout=compact&theme=tokyonight&hide_border=true"/>
 
 <img src="https://streak-stats.demolab.com?user=yashwanth412&theme=tokyonight&hide_border=true"/>
 
