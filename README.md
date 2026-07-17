@@ -51,19 +51,19 @@ I'm **Pasupuleti Yashwanth**, a Software Engineer passionate about building scal
 ### Languages
 
 <p>
-<img src="https://skillicons.dev/icons?i=python,java,js,ts,cpp,sql"/>
+<img src="https://skillicons.dev/icons?i=python,sql"/>
 </p>
 
 ### Frontend
 
 <p>
-<img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind"/>
+<img src="https://skillicons.dev/icons?i=html,css,react,nextjs"/>
 </p>
 
 ### Backend
 
 <p>
-<img src="https://skillicons.dev/icons?i=django,nodejs,express"/>
+<img src="https://skillicons.dev/icons?i=django"/>
 </p>
 
 ### Database
@@ -75,7 +75,7 @@ I'm **Pasupuleti Yashwanth**, a Software Engineer passionate about building scal
 ### Cloud & DevOps
 
 <p>
-<img src="https://skillicons.dev/icons?i=azure,aws,docker,kubernetes,git,github"/>
+<img src="https://skillicons.dev/icons?i=azure,aws,docker,Google,kubernetes,git,github"/>
 </p>
 
 ---
